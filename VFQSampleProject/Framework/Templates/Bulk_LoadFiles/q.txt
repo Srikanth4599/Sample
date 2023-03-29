@@ -1,0 +1,254 @@
+Intialization
+E:/Automation/StandardRegressionPack/Framework/Temp
+Execution initiated at --- 10-May-2021 15:44:40
+Execution initiated at --- 10-May-2021 15:44:40
+No of Scenario(s) to be executed in Batch1:1
+Batch1,01
+No of Keywords to be executed in Trial_BillRun:7
+Current Keyword ----> DBConnection
+------DB connection Event Details------
+connected to DB
+Connected to DB: 10.160.228.246
+------DB connection Event Details - Completed------
+Current Keyword ----> LoginSSH
+------BRM Putty Login Event Details------
+Session Connected to: 10.160.228.134
+------BRM Putty Login Event Details - Completed------
+Current Keyword ----> Trial_BillRun
+------Bill Generation Event Details------
+------AccPoID_BillPoID Event Details------
+Select a.poid_id0 ,b.poid_id0 from pin.account_t a,pin.billinfo_t b where a.account_no IN ('112267624717') and b.account_obj_id0=a.poid_id0 AND NOT b.PAYINFO_OBJ_TYPE LIKE '%prepaid%'
+------AccPoID_BillPoID Event Details - Completed------
+Reading the initial File Content: PinBillRunControl_1.xml : PinBillRunControl_1.xml file Contains : <?xml version="1.0" encoding="UTF-8"?>
+<BusinessConfiguration
+xmlns="http://www.portal.com/schemas/BusinessConfig"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:schemaLocation="http://www.portal.com/schemas/BusinessConfig BusinessConfiguration.xsd">
+<!-- Sample input file for pin_bill_accts containing parameters for bill run management -->
+<!-- Modify according to guidelines -->
+<BillRunConfiguration>
+<!-- List of Billinfo to be billed -->
+	<BillingList>
+		<Account>297257360</Account>
+		<Billinfo>297591835</Billinfo>
+	</BillingList>
+</BillRunConfiguration>
+</BusinessConfiguration>
+
+Writing into the file: PinBillRunControl_1.xml : PinBillRunControl_1.xml File Uploaded Successfully : <?xml version="1.0" encoding="UTF-8"?>
+<BusinessConfiguration
+xmlns="http://www.portal.com/schemas/BusinessConfig"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:schemaLocation="http://www.portal.com/schemas/BusinessConfig BusinessConfiguration.xsd">
+<!-- Sample input file for pin_bill_accts containing parameters for bill run management -->
+<!-- Modify according to guidelines -->
+<BillRunConfiguration>
+<!-- List of Billinfo to be billed -->
+        <BillingList>
+                <Account>297257360</Account>
+                <Billinfo>297591835</Billinfo>
+        </BillingList>
+        <BillingList>
+                <Account>297257360</Account>
+                <Billinfo>297257872</Billinfo>
+        </BillingList>
+</BillRunConfiguration>
+</BusinessConfiguration>
+Reading the File Content after update: PinBillRunControl_1.xml : PinBillRunControl_1.xml file Contains : <?xml version="1.0" encoding="UTF-8"?>
+<BusinessConfiguration
+xmlns="http://www.portal.com/schemas/BusinessConfig"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:schemaLocation="http://www.portal.com/schemas/BusinessConfig BusinessConfiguration.xsd">
+<!-- Sample input file for pin_bill_accts containing parameters for bill run management -->
+<!-- Modify according to guidelines -->
+<BillRunConfiguration>
+<!-- List of Billinfo to be billed -->
+        <BillingList>
+                <Account>297257360</Account>
+                <Billinfo>297591835</Billinfo>
+        </BillingList>
+        <BillingList>
+                <Account>297257360</Account>
+                <Billinfo>297257872</Billinfo>
+        </BillingList>
+</BillRunConfiguration>
+</BusinessConfiguration>
+channel opened!
+apps
+cd pin_trial_bill
+cat PinBillRunControl_1.xml
+vfq_trial_bill.sh -file PinBillRunControl_1.xml -end 06/02/2021
+
+ Dear pin user, your password will never expire !! 
+
+#!/bin/bash
+
+apps
+
+cd pin_trial_bill
+
+cat PinBillRunControl_1.xml
+
+vfq_trial_bill.sh -file PinBillRunControl_1.xml -end 06/02/2021
+
+exit
+
+[pin@EV16:~]$#!/bin/bash
+[pin@EV16:~]$
+[pin@EV16:~]$apps
+[pin@EV16:/brmapp/opt/portal/7.5.0/apps]$
+[pin@EV16:/brmapp/opt/portal/7.5.0/apps]$cd pin_trial_bill
+[pin@EV16:/brmapp/opt/portal/7.5.0/apps/pin_trial_bill]$
+[pin@EV16:/brmapp/opt/portal/7.5.0/apps/pin_trial_bill]$cat PinBillRunControl_1. 
+xml
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BusinessConfiguration
+
+xmlns="http://www.portal.com/schemas/BusinessConfig"
+
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+
+xsi:schemaLocation="http://www.portal.com/schemas/BusinessConfig BusinessConfiguration.xsd">
+
+<!-- Sample input file for pin_bill_accts containing parameters for bill run management -->
+
+<!-- Modify according to guidelines -->
+
+<BillRunConfiguration>
+
+<!-- List of Billinfo to be billed -->
+
+        <BillingList>
+
+           
+     <Account>297257360</Account>
+
+                <Billinfo>297591835</Billinfo>
+
+        </BillingList>
+
+        <BillingList>
+
+                <Account>297257360</Account>
+
+                <Billinfo>297257872</Billinfo>
+
+        </BillingList>
+
+</BillRunConfiguration>
+
+</BusinessConfiguration>[pin@EV16:/brmapp/opt/portal/7.5.0/apps/pin_trial_bill]$
+[pin@EV16:/brmapp/opt/portal/7.5.0/apps/pin_trial_bill]$vfq_trial_bill.sh -file  
+PinBillRunControl_1.xml -end 06/02/2021
+
+#####################################################
+vfq_trial_bill.sh started at Mon May 10 15:49:56 +03 2021
+#####################################################
+
+pin_trial_bill_accts -f_control  PinBillRunControl_1.xml -end  06/02/2021 -verbose
+(3277): set pcp_debug to 0x0
+(3277): set pcp_debug to 0x0
+Rows(elements) read from file:6 (2)
+Fetched (2) units in Total.
+Thread (4141550480) begins ... 
+(3277): set pcp_debug to 0x0
+Thread (4099591056) begins ... 
+Thread (4120570768) begins ... 
+Thread (4110080912) begins
+ ... 
+(3277): set pcp_debug to 0x0
+(3277): set pcp_debug to 0x0
+(3277): set pcp_debug to 0x0
+Thread (4131060624) begins ... 
+(3277): set pcp_debug to 0x0
+
+Thread (4141550480) exits ... 
+Thread (4099591056) exits ... 
+Thread (4120570768) exits ... 
+Thread (4131060624) exits ... 
+Thread (4110080912) exits ... 
+Total number of records processed = 2.
+Number of data errors encountered = 0.
+Total number of errors encountered = 0.
+
+#####################################################
+vfq_trial_bill.sh finished at Mon May 10 15:50:08 +03 2021
+#####################################################
+
+[pin@EV16:/brmapp/opt/portal/7.5.0/apps/pin_trial_bill]$
+[pin@EV16:/brmapp/opt/portal/7.5.0/apps/pin_trial_bill]$exit
+logout
+[H[J
+DONE
+May 10
+PVT set as Normal
+------Bill Generation Event Details - Completed------
+Current Keyword ----> DBDisconnection
+------DB Disconnection Event Details------
+DB disconnected successfully
+------DB Disconnection Event Details - Completed------
+Current Keyword ----> LogoutSSH
+------BRM Putty Logout Event Details------
+Session disconnected successfully
+------BRM Putty logout Event Details - Completed------
+Current Keyword ----> PJM_Login
+com.codoid.products.exception.FilloException: No records found
+	at com.codoid.products.fillo.Recordset.<init>(Recordset.java:40)
+	at com.codoid.products.fillo.Connection.executeQuery(Connection.java:69)
+	at Libraries.Utlities.freaddata_diff(Utlities.java:283)
+	at Libraries.Driver.ExecuteCases(Driver.java:281)
+	at Libraries.Driver.main(Driver.java:168)
+------PJM Login Event Details------
+Started InternetExplorerDriver server (32-bit)
+3.8.0.0
+Listening on port 13779
+Only local connections are allowed
+May 10, 2021 3:46:14 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+java.lang.NullPointerException: null value in entry: url=null
+	at com.google.common.collect.CollectPreconditions.checkEntryNotNull(CollectPreconditions.java:32)
+	at com.google.common.collect.SingletonImmutableBiMap.<init>(SingletonImmutableBiMap.java:42)
+	at com.google.common.collect.ImmutableBiMap.of(ImmutableBiMap.java:72)
+	at com.google.common.collect.ImmutableMap.of(ImmutableMap.java:124)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:276)
+	at Libraries.Browser.OpenBrowser(Browser.java:1200)
+	at Libraries.Keyword_PJM.PJM_Login(Keyword_PJM.java:27)
+	at Libraries.KeyWord.PJM_Login(KeyWord.java:545)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at Libraries.Driver.ExecuteCases(Driver.java:290)
+	at Libraries.Driver.main(Driver.java:168)
+Object does't Visible
+Batch1 :: Failed at Obj: PJM_Username - is not Visible
+Exception occurred *** java.lang.Exception
+	at Libraries.Browser$WebEdit.waittillvisible(Browser.java:109)
+	at Libraries.Keyword_PJM.PJM_Login(Keyword_PJM.java:30)
+	at Libraries.KeyWord.PJM_Login(KeyWord.java:545)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at Libraries.Driver.ExecuteCases(Driver.java:290)
+	at Libraries.Driver.main(Driver.java:168)
+
+java.lang.Exception
+	at Libraries.Browser$WebEdit.waittillvisible(Browser.java:109)
+	at Libraries.Keyword_PJM.PJM_Login(Keyword_PJM.java:30)
+	at Libraries.KeyWord.PJM_Login(KeyWord.java:545)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at Libraries.Driver.ExecuteCases(Driver.java:290)
+	at Libraries.Driver.main(Driver.java:168)
+------PJM Login Event Details - Completed------
+Execution Completed at --- 10-May-2021 15:46:18
+Starting ChromeDriver 73.0.3683.68 (47787ec04b6e38e22703e856e101e840b65afe72) on port 44668
+Only local connections are allowed.
+Please protect ports used by ChromeDriver and related test frameworks to prevent access by malicious code.
+May 10, 2021 3:46:25 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: OSS
+Title Execution Results

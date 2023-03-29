@@ -1,0 +1,59 @@
+No of Keywords to be executed in SwagLabs_About:3
+No data is available in database sheet for particular Usecase : SwagLabs_About
+------phptravels Login Event Details------
+Enviroment: Sample
+Url: https://www.saucedemo.com/
+Final visible status is SwagLabs_UserName >>>>> true
+Batch1 :: Action Click on Obj: SwagLabs_UserName
+Final visible status is SwagLabs_UserName >>>>> true
+Batch1 :: Action SetText on Obj: SwagLabs_UserName - Value: standard_user
+Final visible status is SwagLabs_Password >>>>> true
+Batch1 :: Action SetText on Obj: SwagLabs_Password - Value: secret_sauce
+Final visible status is SwagLabs_Login >>>>> true
+Batch1 :: Action Click on Obj: SwagLabs_Login
+Batch1 :: Action at Obj: SwagLabsLogoText - is Visible
+------Siebel Login Event Details - Completed------
+------Adding new Product to cart ------
+Final visible status is SwagLabs_BurgerMenu >>>>> true
+Batch1 :: Action Click on Obj: SwagLabs_BurgerMenu
+Final visible status is SwagLabs_About >>>>> true
+Batch1 :: Action Click on Obj: SwagLabs_About
+------Adding new Product to cart - Completed------
+------Navigate to Login page ------
+Final visible status is SwagLabs_BurgerClose >>>>> true
+Batch1 :: Action Click on Obj: SwagLabs_BurgerClose
+------Swaglabs Logout Event Details------
+Final visible status is SwagLabs_BurgerMenu >>>>> true
+Batch1 :: Action Click on Obj: SwagLabs_BurgerMenu
+Final visible status is SwagLabs_Logout >>>>> true
+Batch1 :: Action Click on Obj: SwagLabs_Logout
+Exception occurred *** org.openqa.selenium.WebDriverException: Unable to find the session info for particular sessionId 395d8cdcae859666f57356dbe401b9e2, maybe session has quit already or timed out.
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:13:22.693Z'
+System info: host: 'MAVCHN1121248', ip: '10.101.101.6', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.1'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 110.0.5481.78, chrome: {chromedriverVersion: 110.0.5481.30 (aedb656755c4..., userDataDir: C:\Users\ltuser\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:63606}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true, webdriver.remote.sessionid: 395d8cdcae859666f57356dbe40...}
+Session ID: 395d8cdcae859666f57356dbe401b9e2
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:605)
+	at org.openqa.selenium.remote.RemoteWebDriver.quit(RemoteWebDriver.java:448)
+	at Libraries.Keyword_CRM.SwagLabs_Logout(Keyword_CRM.java:668)
+	at Libraries.Keyword_CRM.SwagLabs_NavigateToLoginPage(Keyword_CRM.java:761)
+	at Libraries.KeyWord.SwagLabs_NavigateToLoginPage(KeyWord.java:45)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at Libraries.SampleDriver.ExecuteCases(SampleDriver.java:298)
+	at Libraries.SampleDriver.main(SampleDriver.java:173)
+
+------Swag Labs Logout Event Details - Completed------
+------Navigated to Login page -----

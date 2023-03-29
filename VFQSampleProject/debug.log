@@ -1,0 +1,22 @@
+[0511/013904.109:ERROR:process_info.cc(359)] UncheckedAllocate
+[0511/014910.738:ERROR:process_info.cc(359)] UncheckedAllocate
+[0511/044923.477:ERROR:filesystem_win.cc(148)] DeleteFile C:\Users\ZEESHA~1\AppData\Local\Temp\scoped_dir45308_9040\Crashpad\reports\15a058f8-929b-49a5-939d-4f96a3857aa9.dmp: The process cannot access the file because it is being used by another process. (0x20)
+[0511/045927.972:ERROR:filesystem_win.cc(148)] DeleteFile C:\Users\ZEESHA~1\AppData\Local\Temp\scoped_dir36492_18426\Crashpad\reports\16976939-c7ce-493a-a7e2-bdadddd34c40.dmp: The process cannot access the file because it is being used by another process. (0x20)
+[0511/050510.302:ERROR:process_info.cc(359)] UncheckedAllocate
+[0511/050515.644:ERROR:process_info.cc(359)] UncheckedAllocate
+[0511/050719.573:ERROR:process_reader_win.cc(151)] SuspendThread: Access is denied. (0x5)
+[0511/064557.043:ERROR:filesystem_win.cc(148)] DeleteFile C:\Users\ZEESHA~1\AppData\Local\Temp\scoped_dir26736_7158\Crashpad\reports\ae188fd0-f1b6-47ba-8521-d956c57fd118.dmp: The process cannot access the file because it is being used by another process. (0x20)
+[0511/064557.043:ERROR:filesystem_win.cc(148)] DeleteFile C:\Users\ZEESHA~1\AppData\Local\Temp\scoped_dir23360_20410\Crashpad\reports\75b3c29a-7f0c-4c59-b502-dd3138eb162c.dmp: The process cannot access the file because it is being used by another process. (0x20)
+[0511/075453.528:ERROR:process_info.cc(359)] UncheckedAllocate
+[0511/075453.545:ERROR:process_info.cc(359)] UncheckedAllocate
+[0511/075453.817:ERROR:process_info.cc(359)] UncheckedAllocate
+[0511/075455.685:ERROR:process_info.cc(359)] UncheckedAllocate
+[0511/075455.681:ERROR:process_info.cc(359)] UncheckedAllocate
+[0511/075455.686:ERROR:process_info.cc(359)] UncheckedAllocate
+[0511/075455.695:ERROR:process_info.cc(359)] UncheckedAllocate
+[0511/075455.704:ERROR:process_info.cc(359)] UncheckedAllocate
+[0511/075455.704:ERROR:process_info.cc(359)] UncheckedAllocate
+[0512/232843.498:ERROR:process_info.cc(359)] UncheckedAllocate
+[0512/234432.854:ERROR:filesystem_win.cc(148)] DeleteFile C:\Users\ZEESHA~1\AppData\Local\Temp\scoped_dir41516_25132\Crashpad\reports\f92c9445-d576-4423-9cea-9a30f22decd8.dmp: The process cannot access the file because it is being used by another process. (0x20)
+[0520/183601.813:ERROR:process_info.cc(375)] NtQuerySystemInformation SystemExtendedHandleInformation: The specified information record length does not match the length required for the specified information class. (0xc0000004)
+[0922/144229.828:ERROR:process_info.cc(375)] NtQuerySystemInformation SystemExtendedHandleInformation: The specified information record length does not match the length required for the specified information class. (0xc0000004)
